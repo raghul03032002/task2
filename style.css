@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Nunito&family=Poppins:ital@1&display=swap');
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+body{overflow: hidden;
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('img1.jpg') no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 100vh; }
+
+header{
+    display: flex;
+    justify-content:space-between ;
+    background-color: black;
+    color: rgb(230, 230, 230);
+    align-items: center;
+    padding: 10px 0px 10px 10px;
+}
+.logo{
+    padding-left: 20px;
+    width: 80px; 
+    cursor: pointer;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+header nav ul li{
+    margin-right: 50px;
+    list-style: none;
+    transition: 0.2s;
+    font-family: Hubballi;
+    font-weight:600 ;
+    cursor: pointer;
+    position: relative;
+}
+input{
+    background-color: transparent;
+    color: rgb(255, 59, 59);
+    border: none;
+    font-family: Hubballi;
+    font-size: medium;
+    font-weight:600 ;
+    cursor: pointer;
+}
+li::after{
+    content: "";
+    height: 2px;
+    width:0;
+    position: absolute;
+    left:0px;
+    bottom: -3px;
+    background-color:  rgb(255, 59, 59);
+    transition: 0.5s;
+}
+li:hover::after{
+width: 100%;
+}
+input:hover{
+    color: rgb(255, 255, 255);
+}
+.home{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+.btn{
+    display: flex;
+}
+#search{
+    color:rgb(255, 255, 255);
+    outline: none;
+    border-bottom:2px solid rgb(255, 59, 59) ;
+}
+.btn input[type=button]{ 
+    margin-top: 20px;
+    margin-right: 30px;
+    padding: 10px 25px;
+    border: 2px solid rgb(255, 59, 59);
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+.btn input[type=button]:hover{
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 59, 59);
+}
+.bar i{
+    color: white;
+    cursor: pointer;
+    margin-left: 7px;
+}
